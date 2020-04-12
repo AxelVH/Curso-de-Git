@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción</title>
+    <link rel="stylesheet" href="lib/prism.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+    <h1>Configuración</h1>
+    <p>
+        El siguiente comando nos va a ayudar a asignarle a nuestro git algunas configuraciones a nivel global, esto quiere decir que esta configuración se va a mostrar para todos los usuarios de la computadora y en todos los proyectos.
+    </p>
+    <br>
+    <pre class="language-js">
+        <code class="language-js">
+        git config --global user.email "axelvasquezherrera@outlook.com"
+        git config --global user.name "Axel Yoliston Vasquez Herrera"
+        </code>
+    </pre>    
+    <br>
+    <p>
+        El siguiente comando nos ayuda a verificar la configuración asignada.
+    </p>
+    <br>
+    <pre class="language-js">
+        <code class="language-js">
+        git config --global -l
+        git config -list
+        </code>
+    </pre>  
+
+    <h1>Los estados de GIT</h1>
+
+    <h3>1 - Working Directory</h3>
+    <p>Este estado es el espacio de trabajo</p>
+    <h3>2 - Staging Area</h3>
+    <p>Este estado es el area de preparación</p>
+    <h3>3 - .git directory (Repository)</h3>
+    <p>Es el estado del repositorio (carpeta .git)</p>
+
+    <br>
+    <br>
+
+    <div style="text-align: center;">
+        <img src="img/LosEstadosDeGit.png" alt="Los estados de Git">
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <script src="lib/prism.js"></script>
+
+</body>
+</html>

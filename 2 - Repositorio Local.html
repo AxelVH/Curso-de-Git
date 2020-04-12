@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción</title>
+    <link rel="stylesheet" href="lib/prism.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+    <h1>Creación de un repositorio</h1>
+    <br>
+    <pre class="language-js">
+        <code class="language-js">
+            //Este comando sirve para inicializar un repositorio local
+            git init
+        </code>
+    </pre>    
+
+    <br>
+    <h1>Creación de un repositorio</h1>
+    <pre class="language-js">
+        <code class="language-js">
+            //Sirve para ver en que estados estan los archivos del repositorio.
+            git status
+            //Sirve para agregar el archivo al estado "staging area".
+            git add MiArchivo.html
+            //Sirve para agregar todos los archivos al estado "staging area".
+            git add .
+            //Sirve para agregar todos los archivos del staging area al estado "repository".
+            git commit -m "Mi primer commit"
+            //Sirve para eliminar un archivo del estado "staging area".
+            git restore --staged MiArchivo.html
+        </code>
+    </pre>
+
+    <br>
+    <h1>Deshaciendo los cambios</h1>
+    <pre class="language-js">
+        <code class="language-js">
+            //Sirve para deshacer los cambios de un archivo y volver como estaba en el utlimo commit.
+            git checkout MiArchivo.html
+            //Sirve para deshacer los cambios de todo el repositorio y volver como estaba en el utlimo commit.
+            git checkout .
+        </code>
+    </pre>
+
+    <br>
+    <h1>Historial de cambios</h1>
+    <pre class="language-js">
+        <code class="language-js">
+            git log
+            git log –oneline –all –graph --decorate
+        </code>
+    </pre>
+
+    <br>
+    <h1>Regresando a una versión especifica</h1>
+    <pre class="language-js">
+        <code class="language-js">
+            git checkout HASH_DEL_LOG
+        </code>
+    </pre>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <script src="lib/prism.js"></script>
+
+</body>
+</html>
