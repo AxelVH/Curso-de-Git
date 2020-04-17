@@ -9,20 +9,44 @@
 </head>
 <body>
     
-    <h1>Entorno de Desarrollo</h1>
+    <h1>Creación de un repositorio remoto</h1>
     <br>
-    <p>Esto es una prueba</p>
+    <h1>De repositorio local a remoto</h1>
     <br>
     <pre class="language-js">
         <code class="language-js">
-    1.- Visual STUDIO CODE (Configuración Font Size), Tab Size, wordWrap : 'on'
-    2.- Dependencias: Live Server, Bracket Pair Colorizer,
-    3.- Emmet
-    4.- Correr Live Server
-    5.- Detener Live Server
+            git remote add origin URL_Del_Repositorio
+            git push -u origin master
         </code>
     </pre>    
-
+    <br>
+    <h1>Creando una Rama</h1>
+    <br>
+    <pre class="language-js">
+        <code class="language-js">
+            git branch NombreRama
+            git branch
+            git checkout NombreRama
+        </code>
+    </pre> 
+    <br>
+    <h1>Fusionando una Rama</h1>
+    <br>
+    <pre class="language-js">
+        <code class="language-js">
+           git checkout master
+           git marge NombreRama
+           git checkout -d NombreRama
+        </code>
+    </pre> 
+    <br>
+    <h1>Pull</h1>
+    <br>
+    <pre class="language-js">
+        <code class="language-js">
+           git pull origin master
+        </code>
+    </pre> 
     <script src="lib/prism.js"></script>
 
 </body>

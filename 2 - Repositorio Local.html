@@ -26,12 +26,13 @@
             git status
             //Sirve para agregar el archivo al estado "staging area".
             git add MiArchivo.html
-            //Sirve para agregar todos los archivos al estado "staging area".
+            //Sirve para agregar todos los archivos de la carpeta actual al estado "staging area".
             git add .
             //Sirve para agregar todos los archivos del staging area al estado "repository".
             git commit -m "Mi primer commit"
             //Sirve para eliminar un archivo del estado "staging area".
             git restore --staged MiArchivo.html
+            git reset HEAD MiArchivo.html
         </code>
     </pre>
 
